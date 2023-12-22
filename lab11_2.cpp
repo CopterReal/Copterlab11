@@ -62,7 +62,8 @@ int main(){
 	do{
 		cout << "(1) Destiny draw (2) Stay, SELECT: ";
 		cin >> playerAction;
-	}while(playerAction != 1 && playerAction != 2);
+	}while(playerAction != 1 && playerAction != 2);  
+	if(playerAction == 1){
 		
 		playerCards[2] = drawCard();
   		playerScore = calScore(playerCards[0],playerCards[1],playerCards[2]);
